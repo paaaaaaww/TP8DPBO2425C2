@@ -28,3 +28,6 @@ Saya Fauzia Rahma Nisa mengerjakan Tugas Praktikum 8 dalam mata kuliah Desain da
    - 1 dosen → banyak pengampu
    - 1 mata kuliah → banyak pengampu
    - Pengampu mengikat relasi many-to-many antara dosen dan mata kuliah.
+
+   Struktur Folder tp_mvc2025
+   ![struktur folder](Dokumentasi/strukturFoldertp8.png)

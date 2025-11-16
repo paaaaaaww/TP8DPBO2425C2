@@ -47,3 +47,5 @@ Saya Fauzia Rahma Nisa mengerjakan Tugas Praktikum 8 dalam mata kuliah Desain da
   **2. Alur Program**
   
   Alur program ini berjalan dari user sampai data tampil kembali di browser. Saat user membuka halaman atau menekan tombol (tambah, edit, hapus), file utama seperti lecturer.php akan mengecek aksi apa yang diminta. Aksi ini kemudian diteruskan ke controller yang bertugas mengatur jalannya proses. Controller akan meminta atau mengirim data ke model, yaitu bagian yang berisi query ke database. Model berhubungan langsung dengan tabel di database untuk mengambil, menambah, mengubah, atau menghapus data. Setelah model selesai memproses data, controller mengirim hasilnya ke view untuk diubah menjadi tampilan HTML. View lalu memakai template untuk mengganti placeholder seperti judul, tabel, atau nilai input menjadi tampilan yang lengkap. Terakhir, halaman yang sudah jadi ditampilkan ke browser sehingga user bisa melihat hasil perubahan atau data terbaru.
+
+  https://youtu.be/TlyO7Ybqgoo

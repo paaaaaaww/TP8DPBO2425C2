@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Mata Kuliah</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-info">
+  <div class="container-fluid">
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav me-auto">
+
+        <li class="nav-item">
+          <a class="nav-link text-white" href="lecturer.php">Lecturer</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link text-white" href="mataKuliah.php">Mata Kuliah</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link text-white" href="index.php">Pengampu</a>
+        </li>
+
+      </ul>
+
+      <span class="navbar-brand text-white"><strong>Sistem Akademik MVC</strong></span>
+    </div>
+  </div>
+</nav>
+
+
+  <div class="container mt-5">
+
+    <!-- Form Tambah -->
+    <div class="col-lg-5 mx-auto mb-5">
+      <h2 class="text-center">Tambah Mata Kuliah</h2>
+
+      <form action="mataKuliah.php" method="POST">
+        <div class="form-group mt-3">
+          <label>Nama Mata Kuliah</label>
+          <input type="text" class="form-control" name="nama_matkul" required>
+        </div>
+
+        <div class="form-group mt-3">
+          <label>Kode Mata Kuliah</label>
+          <input type="text" class="form-control" name="kode_matkul" required>
+        </div>
+
+        <div class="form-group mt-3 mb-3">
+          <label>SKS</label>
+          <input type="number" class="form-control" name="sks" required>
+        </div>
+
+        <button type="submit" name="add" class="btn btn-primary w-100">Tambah</button>
+      </form>
+    </div>
+
+    <h2 class="text-center mb-4">Tabel Mata Kuliah</h2>
+
+    <!-- Tabel -->
+    <div class="table-responsive">
+      <table class="table text-center table-bordered">
+        <thead class="table-info">
+          <tr>
+            <th>No</th>
+            <th>Nama Mata Kuliah</th>
+            <th>Kode</th>
+            <th>SKS</th>
+            <th>Aksi</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          DATA_TABEL
+        </tbody>
+      </table>
+    </div>
+
+  </div>
+
+</body>
+
+</html>

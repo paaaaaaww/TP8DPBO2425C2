@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Edit Pengampu</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <div class="container mt-5">
+    <h2 class="text-center">Edit Pengampu</h2>
+
+    <form action="pengampu.php?id_edit={ID_VALUE}" method="POST">
+      
+      <div class="mb-3">
+        <label>Nama Dosen </label>
+        <select name="id_dosen" class="form-control" required>
+          <option value="">-- Pilih Dosen --</option>
+          {DATA_DOSEN}
+        </select>
+      </div>
+
+      <div class="mb-3">
+        <label>Mata Kuliah</label>
+        <select name="id_matkul" class="form-control" required>
+          <option value="">-- Pilih Mata Kuliah --</option>
+          {DATA_MATKUL}
+        </select>
+      </div>
+
+      <div class="mb-3">
+        <label>Semester</label>
+        <input type="text" class="form-control" name="semester" value="SEMESTER_VALUE" required>
+      </div>
+
+      <div class="mb-3">
+        <label>Tahun Ajaran</label>
+        <input type="text" class="form-control" name="tahun_ajaran" value="TAHUN_VALUE" required>
+      </div>
+
+      <button type="submit" name="submit" class="btn btn-warning w-100">Update</button>
+      <a href="pengampu.php" class="btn btn-secondary w-100 mt-2">Batal</a>
+
+    </form>
+
+  </div>
+
+</body>
+</html>

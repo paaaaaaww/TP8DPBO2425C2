@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Pengampu</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-info">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item"><a class="nav-link text-white" href="pengampu.php">Pengampu</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="lecturer.php">Lecturer</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="mataKuliah.php">Mata Kuliah</a></li>
+
+        </ul>
+        <span class="navbar-brand text-white"><strong>Pengampu</strong></span>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container mt-5">
+
+    <!-- Form Tambah Pengampu -->
+    <div class="col-lg-6 mx-auto mb-5">
+      <h2 class="text-center">Tambah Pengampu</h2>
+
+      <form action="pengampu.php" method="POST">
+
+        <div class="form-group mt-3">
+          <label>Dosen</label>
+          <select name="id_dosen" class="form-control" required>
+            <option value="">-- Pilih Dosen --</option>
+            DATA_DOSEN
+          </select>
+        </div>
+
+        <div class="form-group mt-3">
+          <label>Mata Kuliah</label>
+          <select name="id_matkul" class="form-control" required>
+            <option value="">-- Pilih Mata Kuliah --</option>
+            DATA_MATKUL
+          </select>
+        </div>
+
+        <div class="form-group mt-3">
+          <label>Semester</label>
+          <input type="text" class="form-control" name="semester" required>
+        </div>
+
+        <div class="form-group mt-3 mb-3">
+          <label>Tahun Ajaran</label>
+          <input type="text" class="form-control" name="tahun_ajaran" required>
+        </div>
+
+        <button type="submit" name="add" class="btn btn-primary w-100">Tambah</button>
+      </form>
+    </div>
+
+    <h2 class="text-center mb-4">Tabel Pengampu</h2>
+
+    <!-- Tabel -->
+    <div class="table-responsive">
+      <table class="table table-bordered text-center">
+        <thead class="table-info">
+          <tr>
+            <th>No</th>
+            <th>Nama Dosen</th>
+            <th>Mata Kuliah</th>
+            <th>Semester</th>
+            <th>Tahun Ajaran</th>
+            <th>Aksi</th>
+          </tr>
+        </thead>
+        <tbody>
+          DATA_TABEL
+        </tbody>
+      </table>
+    </div>
+  </div>
+</body>
+</html>
